@@ -2443,9 +2443,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\e\\Desktop\\StudentProject\\Student.API\\Student.API.csproj",
-      "projectName": "Student.API",
-      "projectPath": "C:\\Users\\e\\Desktop\\StudentProject\\Student.API\\Student.API.csproj",
+      "projectUniqueName": "C:\\Users\\e\\Desktop\\StudentProject\\Student.API\\StudentManagementAPI.csproj",
+      "projectName": "StudentManagementAPI",
+      "projectPath": "C:\\Users\\e\\Desktop\\StudentProject\\Student.API\\StudentManagementAPI.csproj",
       "packagesPath": "C:\\Users\\e\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\e\\Desktop\\StudentProject\\Student.API\\obj\\",
       "projectStyle": "PackageReference",

@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Student.API.DataModels;
+using StudentManagementAPI.DataModels;
 
 #nullable disable
 
-namespace Student.API.Migrations
+namespace StudentManagementAPI.Migrations
 {
     [DbContext(typeof(StudentAdminContext))]
     [Migration("20241016124325_İnitial")]
@@ -24,7 +24,7 @@ namespace Student.API.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Student.API.DataModels.Address", b =>
+            modelBuilder.Entity("StudentManagementAPI.DataModels.Address", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -49,7 +49,7 @@ namespace Student.API.Migrations
                     b.ToTable("Address");
                 });
 
-            modelBuilder.Entity("Student.API.DataModels.Gender", b =>
+            modelBuilder.Entity("StudentManagementAPI.DataModels.Gender", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -64,7 +64,7 @@ namespace Student.API.Migrations
                     b.ToTable("Gender");
                 });
 
-            modelBuilder.Entity("Student.API.DataModels.Student", b =>
+            modelBuilder.Entity("StudentManagementAPI.DataModels.Student", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -103,18 +103,18 @@ namespace Student.API.Migrations
                     b.ToTable("Student");
                 });
 
-            modelBuilder.Entity("Student.API.DataModels.Address", b =>
+            modelBuilder.Entity("StudentManagementAPI.DataModels.Address", b =>
                 {
-                    b.HasOne("Student.API.DataModels.Student", null)
+                    b.HasOne("StudentManagementAPI.DataModels.Student", null)
                         .WithOne("Address")
-                        .HasForeignKey("Student.API.DataModels.Address", "StudentId")
+                        .HasForeignKey("StudentManagementAPI.DataModels.Address", "StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Student.API.DataModels.Student", b =>
+            modelBuilder.Entity("StudentManagementAPI.DataModels.Student", b =>
                 {
-                    b.HasOne("Student.API.DataModels.Gender", "Gender")
+                    b.HasOne("StudentManagementAPI.DataModels.Gender", "Gender")
                         .WithMany()
                         .HasForeignKey("GenderId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -123,7 +123,7 @@ namespace Student.API.Migrations
                     b.Navigation("Gender");
                 });
 
-            modelBuilder.Entity("Student.API.DataModels.Student", b =>
+            modelBuilder.Entity("StudentManagementAPI.DataModels.Student", b =>
                 {
                     b.Navigation("Address")
                         .IsRequired();

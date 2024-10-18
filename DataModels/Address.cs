@@ -1,4 +1,4 @@
-﻿namespace Student.API.DataModels
+﻿namespace StudentManagementAPI.DataModels
 {
     public class Address
     {

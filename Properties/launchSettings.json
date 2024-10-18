@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Student.API": {
+    "StudentManagementAPI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

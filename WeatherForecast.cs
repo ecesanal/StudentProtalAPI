@@ -1,4 +1,4 @@
-namespace Student.API
+namespace StudentManagementAPI
 {
     public class WeatherForecast
     {

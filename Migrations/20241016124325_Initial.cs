@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Student.API.Migrations
+namespace StudentManagementAPI.Migrations
 {
     public partial class İnitial : Migration
     {
