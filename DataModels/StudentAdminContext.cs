@@ -9,10 +9,10 @@ namespace StudentManagementAPI.DataModels
         {
         }
 
-        public DbSet<Studentt> Student { get; set; }
-        public DbSet<Gender> Gender { get; set; }
-        public DbSet<Address> Address { get; set; }
-
+        public DbSet<Studentt>? Studentt { get; set; }
+        public DbSet<Gender>? Gender { get; set; }
+        public DbSet<Address>? Address { get; set; }
 
     }
+
 }

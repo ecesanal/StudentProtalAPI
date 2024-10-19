@@ -1,4 +1,6 @@
-﻿namespace StudentManagementAPI.DataModels
+﻿using StudentManagementAPI.DataModels;
+
+namespace StudentManagementAPI.DomainModels
 {
     public class Studentt
     {
@@ -12,6 +14,7 @@
         public Guid GenderId { get; set; }
 
         public Address? Address { get; set; }
+
         public Gender? Gender { get; set; }
     }
 }

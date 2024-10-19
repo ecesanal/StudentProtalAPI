@@ -1,4 +1,6 @@
-﻿using StudentManagementAPI.DataModels;
+﻿using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using StudentManagementAPI.DataModels;
 
 namespace StudentManagementAPI.Repositories
 {
@@ -12,7 +14,10 @@ namespace StudentManagementAPI.Repositories
         }
         public List<Studentt> GetStudents()
         {
-            return context.Student.ToList();
+            return context.Studentt
+                .Include(nameof(Gender))
+                .Include(nameof(Address))
+                .ToList();
         }
 
     }

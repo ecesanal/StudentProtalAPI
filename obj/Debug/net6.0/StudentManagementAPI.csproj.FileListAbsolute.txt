@@ -67,3 +67,5 @@ C:\Users\e\Desktop\StudentProject\Student.API\bin\Debug\net6.0\StudentManagement
 C:\Users\e\Desktop\StudentProject\Student.API\bin\Debug\net6.0\StudentManagementAPI.pdb
 C:\Users\e\Desktop\StudentProject\Student.API\obj\Debug\net6.0\StudentManagementAPI.genruntimeconfig.cache
 C:\Users\e\Desktop\StudentProject\Student.API\obj\Debug\net6.0\ref\StudentManagementAPI.dll
+C:\Users\e\Desktop\StudentProject\Student.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\e\Desktop\StudentProject\Student.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
